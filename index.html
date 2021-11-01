@@ -48,7 +48,7 @@
                         CSS and JQuery animations</p>
                 </div>
             </section>
-            <seciton class="about">
+            <section class="about">
                 <div class="wrapper">
                     <h3 class="heading">About <span class="red">Us</span></h3>
                     <span class="line">line</span>
@@ -68,7 +68,7 @@
                             expedita cumque!</p>
                     </div>
                 </div>
-            </seciton>
+            </section>
             <div class="download">
                 <div class="wrapper">
                     <div class="download-content">
@@ -250,11 +250,11 @@
                             <li><a class="tab portfolio" href="#FIXME" title="Portfolio" target="_self">Portfolio</a></li>
                         </ul>
                         <figure class="filter-img">
-                            <img id="corporate" src="assets/images/Portfolio/01.jpg" alt="Filter">
-                            <img id="portfolio" src="assets/images/Portfolio/02.jpg" alt="Filter">
-                            <img id="creative" src="assets/images/Portfolio/03.jpg" alt="Filter">
-                            <img id="creative" src="assets/images/Portfolio/04.jpg" alt="Filter">
-                            <img id="portfolio" src="assets/images/Portfolio/05.jpg" alt="Filter">
+                            <img class="corporate" src="assets/images/Portfolio/01.jpg" alt="Filter">
+                            <img class="portfolio" src="assets/images/Portfolio/02.jpg" alt="Filter">
+                            <img class="creative" src="assets/images/Portfolio/03.jpg" alt="Filter">
+                            <img class="creative" src="assets/images/Portfolio/04.jpg" alt="Filter">
+                            <img class="portfolio" src="assets/images/Portfolio/05.jpg" alt="Filter">
                         </figure>
                     </div>
                 </div>
@@ -464,9 +464,61 @@
                     </figure>
                 </div>
             </section>
+            <section class="contact">
+                <div class="wrapper">
+                    <span class="heading">contact <span class="red">us</span></span>
+                    <span class="line">line</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo at maiores reprehenderit, ab eos rerum recusandae aut distinctio voluptates amet maxime! Voluptates quisquam veniam fugiat?</p>
+                    <ul class="info">
+                        <li><span class="title">contact in<span class="red">fo</span></span></li>
+                        <li><p class="info-icon address"><span class="bold">Address:</span>No. 123, Wallstreet, India</p></li>
+                        <li><a class="info-icon mail" href="mailto:info@yourdomain.com"><span class="bold">Mail us:</span>info@yourdomain.com</a></li>
+                        <li><a class="info-icon call" href="tel:+91124567890"><span class="bold">Phone:</span>+91 123-456-7890</a></li>
+                        <li><a class="info-icon web" href="www.Cosmix.com"><span class="bold">Website:</span>www.Cosmix.com</a></li>
+                    </ul>
+                    <form id="contact-form" method="post">
+                        <ul>
+                            <li>
+                                <input type="text" id="name" name="Name" placeholder="Name" required>
+                                <span class="n-error hide">Error</span>
+                            </li>
+                            <li>
+                                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                                <span class="e-error hide">Error</span>
+                            </li>
+                            <li>
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                                <span class="s-error hide">Error</span>
+                            </li>
+                            <li>
+                                <textarea name="Enter your message" id="msg" cols="30" rows="10"></textarea>
+                                <span class="m-error hide">Error</span>
+                            </li>
+                            <li><button type="submit">Send Now</button></li>
+                        </ul>
+                    </form>
+                </div>
+            </section>
+            <div class="last">
+                <p>looking forward to <span class="bold">hearing</span> from you!</p>
+            </div>
         </main>
+        <footer>
+            <div class="wrapper">
+                <span class="heading">Follow Us On</span>
+                <ul class="footer-ctn">
+                    <li><a class="social Facebook" href="#FIXME" title="Facebook" target="_blank">Facebook</a></li>
+                    <li><a class="social twitter" href="#FIXME" title="Twitter" target="_blank">Twitter</a></li>
+                    <li><a class="social linkdein" href="#FIXME" title="Linkedin" target="_blank">Linkedin</a></li>
+                    <li><a class="social google" href="#FIXME" title="Google" target="_blank">Google</a></li>
+                    <li><a class="social youtube" href="#FIXME" title="Youtube" target="_blank">Youtube</a></li>
+                    <li><a class="social instagram" href="#FIXME" title="Instagram" target="_blank">Instagram</a></li>
+                    <li><a class="social behance" href="#FIXME" title="Behance" target="_blank">Behance</a></li>
+                </ul>
+                <p>&copy; copyright 2016 cosmix - created by: <span class="blue">template stock</span></p>
+            </div>
+        </footer>
     </div>
     <script src="assets/js/script.js"></script>
 </body>
-
 </html>
