@@ -373,6 +373,54 @@ section { padding: 50px 0; }
     color: white;
 }
 
+footer { padding: 30px 0; }
+
+.footer-ctn {  
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f-social {
+    width: 50px;
+    height: 50px;
+    border: 2px solid gray;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    text-indent: -9999px;
+    color: gray;
+}
+
+.f-social:hover { 
+    border-color: var(--red) ;
+    color: var(--red); 
+}
+
+.f-social::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    font-size: 24px;
+    text-indent: 0;
+    transform: translate(-50%, -50%);
+}
+
+.facebook::before { content: "\f39e"; }
+.google::before { content: "\f0d5"; }
+.linkedin::before { content: "\f0e1"; }
+.pinterest::before { content: "\f0d2"; }
+.twitter::before { content: "\f099"; }
+.youtube::before { content: "\f167"; }
+.behance::before { content: "\f1b4"; }
+.instagram::before { content: "\e055"; }
+
 @media (max-width:1280px) {
     .logo { flex-basis: 25%; }
     nav { flex-basis: 65%; }
