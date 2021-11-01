@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type="button"],
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup {
+  top: -0.7em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+/* 1.2. Clear Fix
+   ========================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
+
+/*for all*/
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%; 
+    padding: 10px 0; 
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    z-index: 9999;
+} 
+
+header .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo { flex-basis: 30%; }
+nav { flex-basis: 60%; }
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li a { 
+    color: white;
+    font-weight: 400;
+    font-size: 16px; 
+}
+
+.menu { display: none; }
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    transform: all 0.3s ease-in-out;
+    background-color: white;
+    text-indent: -9999px;
+}
+
+@media (max-width:1280px) {
+    .logo { flex-basis: 25%; }
+    nav { flex-basis: 65%; }
+}
+
+@media (max-width:990px) {
+    .logo { flex-basis: 20%; }
+    nav { flex-basis: 70%; }
+    nav ul li a { font-size: 14px; }
+}
+
+@media (max-width:768px) {
+    header .wrapper { justify-content: space-between; }
+    .logo { flex-basis: 15%; }
+    nav { flex-basis: 75%; }
+    nav ul li a { font-size: 12px; }
+}
+
+@media (max-width:550px) {
+    .wrapper { width: 95%; }
+    .menu { display: block; }
+
+    nav ul {
+        width: 100%;
+        padding: 20px 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 5%;
+        left: 0;
+        transform: translateX(200%);
+        transition: all 0.3s ease-in-out;
+        background-color: #565656;
+    }
+
+    nav ul li { margin-bottom: 2em; }
+}
+
+/* @media (max-width:320px) {
+
+} */
