@@ -195,21 +195,21 @@ li {
 .red { color: var(--red); }
 
 p { 
-    color: #555555;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5em; 
+  color: #555555;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em; 
 }
 
 .wrapper {
-    max-width: 1440px;
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 header {
@@ -228,7 +228,11 @@ header .wrapper {
     align-items: center;
 }
 
-.logo { flex-basis: 30%; }
+.logo { 
+  flex-basis: 30%; 
+  text-align: left;
+}
+
 nav { flex-basis: 60%; }
 
 nav ul {
@@ -297,12 +301,14 @@ nav ul li a:hover { text-decoration-line: underline; }
 .large {
     font-weight: 600;
     font-size: 56px;
+    text-align: left;
 }
 
 .banner .wrapper p {
     width: 50%;
     margin-top: 1em;
     color: white;
+    text-align: left;
 }
 
 .line {
@@ -373,11 +379,136 @@ section { padding: 50px 0; }
     color: white;
 }
 
+.service-content {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-details { 
+  flex-basis: 30%; 
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.details {
+  flex-basis: 75%;
+  text-align: justify;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  display: block;
+  position: relative;
+  text-indent: -9999px;
+}
+
+.icon::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: var(--red);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 24px;
+  text-indent: 0;
+  transform: translate(-50%, -50%);
+}
+
+.graph::after { content: "\f201"; }
+.bgraph::after { content: "\f1b3"; }
+.pie::after { content: "\f200"; }
+.app::after { content: "\f1ab"; }
+.bargraph::after { content: "\f080"; }
+.dot::after { content:  "\f192"; }
+
+.progress-ctn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.progress-ctn img { flex-basis: 35%; }
+
+.progress-content {
+  margin-right: 5em; 
+  flex-basis: 50%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.progress-content li {
+  width: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.progress {
+  width: 100%;
+  margin: 1.5em 0;
+  background-color: lightgray;
+}
+
+.progress-bar {
+  padding-right:1em;
+  display: block;
+  background-color: var(--red);
+  color: white;
+  text-align: right;
+}
+
+.nine5 { width: 90%; }
+.eighty { width: 80%; }
+.sixty { width: 60% }
+.seventy { width: 70%; }
+
+.client-ctn {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.last {
+  padding: 1em 0;
+  background-color: var(--red);
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.last p { color: white; }
+.bold { font-weight: 600; }
 footer { padding: 30px 0; }
 
+footer .wrapper p {
+  color: gray;  
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
 .footer-ctn {  
-    width: 50%;
-    margin-top: 20px;
+    width: 40%;
+    margin-top: 30px;
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
@@ -386,8 +517,8 @@ footer { padding: 30px 0; }
 }
 
 .f-social {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border: 2px solid gray;
     border-radius: 50%;
     display: block;
@@ -407,7 +538,7 @@ footer { padding: 30px 0; }
     top: 50%;
     font-family: "Font Awesome 5 Brands";
     font-weight: 900;
-    font-size: 24px;
+    font-size: 20px;
     text-indent: 0;
     transform: translate(-50%, -50%);
 }
@@ -420,6 +551,7 @@ footer { padding: 30px 0; }
 .youtube::before { content: "\f167"; }
 .behance::before { content: "\f1b4"; }
 .instagram::before { content: "\e055"; }
+.blue { color: blue; }
 
 @media (max-width:1280px) {
     .logo { flex-basis: 25%; }
