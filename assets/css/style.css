@@ -270,6 +270,7 @@ nav ul li a:hover {
   transform: all 0.3s ease-in-out;
   background-color: white;
   text-indent: -9999px;
+  transition: all 0.3s ease-in-out;
 }
 
 .banner {
@@ -1222,6 +1223,20 @@ footer .wrapper p {
 
   nav ul li {
     margin-bottom: 2em;
+  }
+
+  .menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .menu.active .bar:nth-child(1) {
+    -webkit-transform: translateY(7px) rotate(45deg);
+    -ms-transform: translateY(7px) rotate(45deg);
+    transform: translateY(7px) rotate(45deg);
+  }
+  .menu.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-7px) rotate(-45deg);
+    -ms-transform: translateY(-7px) rotate(-45deg);
+    transform: translateY(-7px) rotate(-45deg);
   }
 }
 

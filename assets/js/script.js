@@ -1,5 +1,6 @@
 $(document).ready(function () {
     var slider = $(".slider");
+    var hmenu = $ (".menu");
     
     slider.slick({
         fade: true,
@@ -18,5 +19,9 @@ $(document).ready(function () {
         else{
             $("header").removeClass("nav-bg"); 	
         }
+    });
+
+    hmenu.click(function () { 
+        hmenu.toggleClass('active');
     });
 });
