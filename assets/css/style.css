@@ -945,24 +945,25 @@ section {
 
 .b-icon {
   margin-bottom: 1em;
-  margin-left: 2em;
   display: inline-block;
-  position: relative;
   color: gray;
 }
 
 .b-icon:hover { color: var(--red); }
 
 .b-icon::before {
-  position: absolute;
-  margin-left: -25px;
+  margin-right: 10px;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 16px;
 }
 
 .pen::before { content: "\f303"; }
-.msg::before { content: "\f075"; }
+
+.msg::before { 
+  margin-left: 10px;
+  content: "\f075"; 
+}
 
 .client-ctn {
   width: 100%;
@@ -973,6 +974,88 @@ section {
 }
 
 .client-ctn img { flex-basis: 18%; }
+
+.contact-content {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.info {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.info li { margin-bottom: 30px; }
+.info li .title { text-transform: uppercase; }
+
+.info-icon {
+  display: inline-block;
+  color: gray;
+  font-size: 16px;
+}
+
+.info-icon:hover { color: var(--red); }
+
+.info-icon::before {
+  margin-right: 10px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.address::before { content: "\f3c5"; }
+.mail::before { content: "\f0e0"; }
+.call::before { content: "\f879"; }
+.web::before { content: "\f086"; }
+
+form { flex-basis: 50%; }
+
+form ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+}
+
+form ul li:first-child { flex-basis: 45%; }
+form ul li:nth-child(2) { flex-basis: 45%; }
+form ul li:nth-child(3) { flex-basis: 100%; }
+form ul li:nth-last-child(2) { flex-basis: 100%; }
+form ul li:last-child { flex-basis: 100%; }
+
+input, textarea { 
+  width: 100%;
+  padding: 5px 10px;
+  padding-right: 0;
+  margin-left: -10px;
+  outline: none;
+  border: 1px solid lightgray; 
+}
+
+input:hover, textarea:hover { border: 1px solid var(--red); }
+input:focus, textarea:focus { outline: 1px solid var(--red); }
+
+button { 
+  width: 102%;
+  margin-left: -10px; 
+}
+
+.error {
+  display: block;
+  margin-bottom: 1em;
+  color: red;
+  font-size: 12px;
+}
+
+.hide { visibility: hidden; }
 
 .last {
   padding: 1em 0;

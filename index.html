@@ -558,40 +558,42 @@
                     <span class="line">line</span>
                     <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo at maiores reprehenderit, ab eos
                         rerum recusandae aut distinctio voluptates amet maxime! Voluptates quisquam veniam fugiat?</p>
-                    <ul class="info">
-                        <li><span class="title">contact in<span class="red">fo</span></span></li>
-                        <li>
-                            <p class="info-icon address"><span class="bold">Address:</span>No. 123, Wallstreet, India
-                            </p>
-                        </li>
-                        <li><a class="info-icon mail" href="mailto:info@yourdomain.com"><span class="bold">Mail
-                                    us:</span>info@yourdomain.com</a></li>
-                        <li><a class="info-icon call" href="tel:+91124567890"><span class="bold">Phone:</span>+91
-                                123-456-7890</a></li>
-                        <li><a class="info-icon web" href="www.Cosmix.com"><span
-                                    class="bold">Website:</span>www.Cosmix.com</a></li>
-                    </ul>
-                    <form id="contact-form" method="post">
-                        <ul>
+                    <div class="contact-content">
+                        <ul class="info">
+                            <li><span class="title">contact in<span class="red">fo</span></span></li>
                             <li>
-                                <input type="text" id="name" name="Name" placeholder="Name" required>
-                                <span class="n-error hide">Error</span>
+                                <p class="info-icon address"><span class="bold">Address: </span>No. 123, Wallstreet, India
+                                </p>
                             </li>
-                            <li>
-                                <input type="email" id="email" name="email" placeholder="Email Address" required>
-                                <span class="e-error hide">Error</span>
-                            </li>
-                            <li>
-                                <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                                <span class="s-error hide">Error</span>
-                            </li>
-                            <li>
-                                <textarea name="Enter your message" id="msg" cols="30" rows="10"></textarea>
-                                <span class="m-error hide">Error</span>
-                            </li>
-                            <li><button class="btn" type="submit">Send Now</button></li>
+                            <li><a class="info-icon mail" href="mailto:info@yourdomain.com"><span class="bold">Mail
+                                        us: </span>info@yourdomain.com</a></li>
+                            <li><a class="info-icon call" href="tel:+91124567890"><span class="bold">Phone: </span>+91
+                                    123-456-7890</a></li>
+                            <li><a class="info-icon web" href="www.Cosmix.com"><span
+                                        class="bold">Website: </span>www.Cosmix.com</a></li>
                         </ul>
-                    </form>
+                        <form id="contact-form" method="post">
+                            <ul>
+                                <li>
+                                    <input type="text" id="name" name="Name" placeholder="Name" required>
+                                    <span class="error n-error hide">Error</span>
+                                </li>
+                                <li>
+                                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                                    <span class="error e-error hide">Error</span>
+                                </li>
+                                <li>
+                                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                                    <span class="error s-error hide">Error</span>
+                                </li>
+                                <li>
+                                    <textarea name="msg" id="msg" cols="30" rows="5" placeholder="Enter your message"></textarea>
+                                    <span class="error m-error hide">Error</span>
+                                </li>
+                                <li><button class="btn" type="submit">Send Now</button></li>
+                            </ul>
+                        </form>
+                    </div>
                 </div>
             </section>
             <div class="last">
