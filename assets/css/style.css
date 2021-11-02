@@ -535,7 +535,66 @@ section { padding: 50px 0; }
 .tab-details { flex-basis: 50%; } 
 .tab-content li img { flex-basis: 40%; }
 
-.feature-two { background-color: whitesmoke; }
+.feature-two { 
+  padding: 50px 0;
+  background-color: whitesmoke; 
+}
+
+.filter-tab {
+  margin-top: 2em;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+}
+
+.tab { 
+  padding: 10px 15px; 
+  color: gray;
+}
+
+.filter-tab li:first-child a { border-radius: 5px 0 0 5px; }
+.filter-tab li:last-child a { border-radius: 0 5px 5px 0; }
+
+.tab:hover { 
+  background-color: black;
+  color: white; 
+}
+
+.active-tab { 
+  position: relative;
+  background-color: var(--red); 
+  color: white;
+}
+
+.active-tab::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 10px solid var(--red);
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+}
+
+.filter-img {
+  min-height: 500px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.filter-img img { flex-basis: 30%; }
 
 .client-ctn {
   width: 80%;
