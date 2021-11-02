@@ -558,7 +558,7 @@ section {
   text-indent: -9999px;
 }
 
-.feat:hover::after {
+.feat:hover::before {
   color: var(--red);
 }
 
@@ -664,7 +664,7 @@ section {
 }
 
 .filter-img {
-  min-height: 500px;
+  min-height: 400px;
   margin-top: 50px;
   display: flex;
   flex-direction: row;
@@ -677,6 +677,8 @@ section {
 .filter-img img {
   flex-basis: 30%;
 }
+
+.price { padding-bottom: 0; }
 
 .price-content {
   width: 100%;
@@ -696,8 +698,8 @@ section {
 }
 
 .price-tag {
-  padding: 40px 30px;
-  margin-bottom: -20%;
+  padding: 2em 1.5em;
+  margin-bottom: -3em;
   display: block;
   border-radius: 50%;
   position: relative;
@@ -802,16 +804,9 @@ section {
   text-indent: 0;
 }
 
-.client-ctn {
-  width: 80%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .team {
   width: 100%;
+  padding-bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -918,6 +913,66 @@ section {
 .like::before { content: "\f164"; }
 .projects::before { content: "\f552"; }
 .coffee::before { content: "\f0f4"; }
+.blog { padding-bottom: 0; }
+
+.blog-content {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+} 
+
+.blog-content li { flex-basis: 31%; }
+.blog-img { position: relative; }
+.blog-content li * { margin-bottom: 1em; }
+.blog-content li a { color: gray; }
+.blog-content li a:hover { text-decoration: underline; }
+
+.blog-img figcaption {
+  width: 40px;
+  padding: 2px;
+  position: absolute;
+  top: 0;
+  background-color: #555555;
+  color: white;
+  text-align: center;
+  line-height: 1em;
+}
+
+.small { font-size: 12px; }
+
+.b-icon {
+  margin-bottom: 1em;
+  margin-left: 2em;
+  display: inline-block;
+  position: relative;
+  color: gray;
+}
+
+.b-icon:hover { color: var(--red); }
+
+.b-icon::before {
+  position: absolute;
+  margin-left: -25px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.pen::before { content: "\f303"; }
+.msg::before { content: "\f075"; }
+
+.client-ctn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client-ctn img { flex-basis: 18%; }
 
 .last {
   padding: 1em 0;
