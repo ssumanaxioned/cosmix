@@ -13,6 +13,7 @@ $(document).ready(function () {
     autoplay: true,
     autoplayspeed: 5000,
     dots: true,
+    arrows: true,
   });
 
   $(window).scroll(function () {
@@ -28,14 +29,7 @@ $(document).ready(function () {
     } else {
       $(".top").fadeOut();
     }
-  });
 
-  hmenu.click(function () {
-    hmenu.toggleClass("active");
-    nav.toggleClass("nav-active");
-  });
-
-  $(window).scroll(function () {
     if ($(window).scrollTop() > counter_ctn) {
       $(".count").each(function () {
         var $this = $(this),
@@ -59,6 +53,11 @@ $(document).ready(function () {
         );
       });
     }
+  });
+
+  hmenu.click(function () {
+    hmenu.toggleClass("active");
+    nav.toggleClass("nav-active");
   });
 
   $('.tab-btn').click(function () {
