@@ -1,9 +1,8 @@
 $(document).ready(function () {
   var slider = $(".slider");
   var hmenu = $(".menu");
-  var nav = $("nav ul")
-  var counter_ctn = $(".counter-ctn").offset().top;
-  var position = counter_ctn - $(window).height();
+  var nav = $("nav ul");
+  var counter_ctn = $(".slider-ctn").offset().top;
 
   slider.slick({
     fade: true,
@@ -28,8 +27,7 @@ $(document).ready(function () {
   });
 
   $(window).scroll(function(){
-      if ($(window).scrollTop() > position) {
-          console.log($(window).scrollTop());
+      if ($(window).scrollTop() > counter_ctn) {
         $(".count").each(function () {
             var $this = $(this),
               countTo = $this.attr("data-target");
@@ -52,5 +50,15 @@ $(document).ready(function () {
             );
           });
       }
-  })
+  });
+
+  $('.tab-btn').click(function(){
+    $('.feat-active').removeClass('feat-active');
+    console.log($(this));
+    $(this).children().addClass('feat-active');
+    $('.tab-active').removeClass('tab-active');
+    const index = $(this).index();
+    console.log(index);
+    $('.tabs').eq(index).addClass('tab-active');
+  });
 });
