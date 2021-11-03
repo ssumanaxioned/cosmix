@@ -1221,13 +1221,10 @@ footer .wrapper p {
     background-color: #565656;
   }
 
-  nav ul li {
-    margin-bottom: 2em;
-  }
+  nav ul li { margin-bottom: 2em; }
+  .menu.active .bar:nth-child(2) { opacity: 0;}
+  .nav-active { transform: translateX(0); }
 
-  .menu.active .bar:nth-child(2) {
-    opacity: 0;
-  }
   .menu.active .bar:nth-child(1) {
     -webkit-transform: translateY(7px) rotate(45deg);
     -ms-transform: translateY(7px) rotate(45deg);
