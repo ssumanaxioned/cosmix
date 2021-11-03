@@ -22,6 +22,12 @@ $(document).ready(function () {
     } else {
       $("header").removeClass("nav-bg");
     }
+
+    if ( scroll > 300) {
+      $(".top").fadeIn();
+    } else {
+      $(".top").fadeOut();
+    }
   });
 
   hmenu.click(function () {

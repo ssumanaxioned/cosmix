@@ -107,6 +107,7 @@ section {
 /* Force scrollbar */
 html {
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 /* Align radios and text inputs with their label */
@@ -1169,6 +1170,40 @@ footer .wrapper p {
 }
 .blue {
   color: blue;
+}
+
+.top {
+  display: none;
+  outline: none;
+  position: fixed;
+  top: 90vh;
+  right: 25px;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  outline: none;
+  display: block;
+  position: relative;
+  background-color: var(--red);
+  text-indent: -9999px;
+}
+
+.arrow:hover { background-color: #555555; }
+
+.arrow::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: "\f077";
+  color: whitesmoke;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+  text-indent: 0;
+  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 1280px) {
